@@ -1,7 +1,35 @@
 
+/*A1*/
 
+var names = ["Mercury", "Venus", "Earth"]
+d3.select("#A1")
+  .append("p")
+  .text(names)
 
+console.log (names)
 
+/*A2*/
+ 
+d3.select("#A2")
+  .append("p")
+  .text(names[0])
+ .append("p")
+  .text(names[1])
+ .append("p")
+  .text(names[2])
+
+/* A3 */
+
+var plaPromise = d3.json("planet.json")
+plaPromise then( 
+   function(plaData)
+{
+    console.log("Hallelujah", plaData)
+}
+    function(err)
+{
+    console.log("HAHA", err)
+})
 
 
 /*
