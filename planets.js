@@ -30,7 +30,9 @@ d3.json("planets.json")
 })
 
 /*B3 - what happened to B2?!?*/
-d3.select("B3").image("earth.jpg")
+d3.select("B3")
+  .append("img")
+  .image("earth.jpg")
 
 /*d3.select("B3").append("img").attr("earth.jpg", "jupiter.jpg", "mars.jpg", "mercury.jpg", "neptune.jpg", "saturn.jpg")*/
 
