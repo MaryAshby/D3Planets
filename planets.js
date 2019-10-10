@@ -18,9 +18,8 @@ d3.select("#A2")
  .append("p")
   .text(names[2])
 
-/* A3 */
 
-/* A3 */
+/* B1 */
 
 d3.json("planets.json")
 .then
@@ -30,6 +29,10 @@ d3.json("planets.json")
     console.log(data)
 })
 
+/*B3 - what happened to B2?!?*/
+d3.select("B3").image("earth.jpg")
+
+/*d3.select("B3").append("img").attr("earth.jpg", "jupiter.jpg", "mars.jpg", "mercury.jpg", "neptune.jpg", "saturn.jpg")*/
 
 /*
 var makePlanet = function(name,img,distance,radius,density,moons)
