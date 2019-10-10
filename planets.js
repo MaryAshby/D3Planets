@@ -20,15 +20,14 @@ d3.select("#A2")
 
 /* A3 */
 
-var plaPromise = d3.json("planet.json")
-plaPromise then( 
-   function(plaData)
+/* A3 */
+
+d3.json("planets.json")
+.then
+(
+  function(data)
 {
-    console.log("Hallelujah", plaData)
-}
-    function(err)
-{
-    console.log("HAHA", err)
+    console.log(data)
 })
 
 
