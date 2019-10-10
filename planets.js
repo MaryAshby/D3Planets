@@ -36,6 +36,17 @@ d3.select("B3")
 
 /*d3.select("B3").append("img").attr("earth.jpg", "jupiter.jpg", "mars.jpg", "mercury.jpg", "neptune.jpg", "saturn.jpg")*/
 
+/*Create a list with all the names of the planets. An order list to be more precise.  Bind the data to the li elements.*/
+/*B4*/
+
+var planets = ["mercury","Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
+var ol=d3.select("B4").append("ol")
+ol.selectAll("li")
+  .data(planets)
+  .enter()
+  .append("li")
+
+          
 /*
 var makePlanet = function(name,img,distance,radius,density,moons)
 {
